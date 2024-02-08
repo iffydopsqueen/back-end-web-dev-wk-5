@@ -47,6 +47,12 @@
                 shoplist: ['Salad', 'Eggs', 'Apples', 'Chicken']
             }
         })
+
+        // Create event listener for button using vanilla JS
+        document.querySelector("#btn").addEventListener('click', () => {
+            let item= document.querySelector("#inputItem").value;
+            app.shoplist.push(item);
+        });
     </script>
     
 </body>
