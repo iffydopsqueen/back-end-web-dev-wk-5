@@ -29,7 +29,12 @@
 
     <div id="root">
 
-        
+        <ul>
+            <li v-for="item in shoplist" v-text="item"></li>
+        </ul>
+
+        <input type="text" id="inputItem">
+        <button id="btn">Add Item</button>
 
     </div>
 
@@ -39,7 +44,7 @@
             el: '#root',
 
             data: {
-                
+                shoplist: ['Salad', 'Eggs', 'Apples', 'Chicken']
             }
         })
     </script>
