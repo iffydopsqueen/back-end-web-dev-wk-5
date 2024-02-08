@@ -60,16 +60,16 @@
         // Move our event listeners here so it's more contained 
         /* Using 'mounted' lifecycle hook to fire event listener once everything is ready to go, 
         data is bounded and instance mounted to the DOM */
-        mounted() {
-            // Create event listener for button using vanilla JS
-            document.querySelector("#btn").addEventListener('click', () => {
-                let item= document.querySelector("#inputItem").value;
-                app.shoplist.push(item.value);
+        // mounted() {
+        //     // Create event listener for button using vanilla JS
+        //     document.querySelector("#btn").addEventListener('click', () => {
+        //         let item= document.querySelector("#inputItem").value;
+        //         app.shoplist.push(item.value);
 
-                // Clear text in text box
-                item.value = ' ';
-            });
-        }
+        //         // Clear text in text box
+        //         item.value = ' ';
+        //     });
+        // }
     })
         
     </script>
